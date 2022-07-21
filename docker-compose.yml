@@ -1,0 +1,10 @@
+version: "3" 
+  services:
+  release:
+    container_name: nuxt
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    command: bash -c "yarn start"
+    ports:
+      - "3000:3000"
