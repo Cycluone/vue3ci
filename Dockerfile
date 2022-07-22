@@ -1,4 +1,5 @@
 FROM node:lts
+RUN yarn create vite
 RUN mkdir -p /app
 ENV HOST 0.0.0.0
 COPY . /app
