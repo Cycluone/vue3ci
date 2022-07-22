@@ -5,6 +5,6 @@ version: "3"
     build:
       context: ./
       dockerfile: ./Dockerfile
-    command: bash -c "pnpm run dev"
+    command: bash -c "npm run dev"
     ports:
       - "3000:3000"
